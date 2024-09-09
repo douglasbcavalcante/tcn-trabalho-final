@@ -1,0 +1,30 @@
+# https://techblogs.42gears.com/how-to-deploy-mqtt-broker-to-kubernetes-cluster/
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hivemq-broker-depl
+  labels:
+        app: my-hivemq-broker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-hivemq-broker
+  template:
+    metadata:
+      labels:
+        app: my-hivemq-broker
+    spec:
+      containers:
+      - name: broker-container
+        image: hivemq/hivemq-ce
+        resources:
+          limits:
+            memory: "0.6Gi"
+            cpu: "300m"  
+          requests:
+            memory: "0.2Gi"
+            cpu: "150m"  
+        ports:
+        - containerPort: 1883
