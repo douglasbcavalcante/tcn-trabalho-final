@@ -75,10 +75,10 @@ $ sudo kubectl get hpa hivemq-broker-depl --watch
 
 6. Teste manual (a partir de outro computador com Ubuntu instalado)
 
-- Instalar o __mosquitto_clients__:
+- Instalar o __mosquitto-clients__:
 
 ```
-$ sudo apt install mosquitto_clients
+$ sudo apt install mosquitto-clients
 ```
 
 - Em um terminar efetuar uma subscriação a um tópico (exemplo, __teste/topic__):
