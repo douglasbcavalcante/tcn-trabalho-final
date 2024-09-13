@@ -2,6 +2,3 @@
 
 ## Cluster Kubernetes para Raspberry Pi
 - Ver a pasta [**hivemq**](./hivemq).
-
-## Programa em Python para testes
-- Ver a pasta [**python_test_program**](./python_test_program).
