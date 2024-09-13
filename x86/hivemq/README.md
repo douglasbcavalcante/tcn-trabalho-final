@@ -63,7 +63,7 @@ $ sudo kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releas
 4. Habilitar o HPA para a aplicação
 
 ```
-$ sudo kubectl autoscale deployment hivemq-broker-depl --cpu-percent=70 --min=1 --max=10
+$ sudo kubectl autoscale deployment hivemq-broker-depl --cpu-percent=50 --min=1 --max=10
 
 ```
 
