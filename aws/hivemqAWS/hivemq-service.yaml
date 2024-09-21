@@ -1,0 +1,14 @@
+# https://techblogs.42gears.com/how-to-deploy-mqtt-broker-to-kubernetes-cluster/
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hivemq-service
+spec:
+  selector:
+    app: my-hivemq-broker
+  type: LoadBalancer
+  ports:
+  - port: 1883
+    targetPort: 1883
+    nodePort: 31883
