@@ -23,7 +23,12 @@
 
 ### x86 
 
-- Arquivos para deployment do HiveMQ como broker MQTT e programa de testes em python, focado na implementação local. Pode ser implementada em ambiente virtualizado ou baremetal.
+- Arquivos para deployment do HiveMQ como broker MQTT, focado na implementação local. Pode ser implementada em ambiente virtualizado ou baremetal.
 - Ferramentas recomendadas:
     - vscode
-    - Rodar os programas de teste em Python em ambiente virtual.
+ 
+### aws
+
+- Arquivos para deployment do HiveMQ como broker MQTT, focado na implementação na nuvem AWS. 
+- Ferramentas recomendadas:
+    - vscode
