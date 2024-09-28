@@ -1,0 +1,25 @@
+NAME                 REFERENCE                       TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 2%/70%   1         20        1          57m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 2%/70%   1         20        1          57m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 2%/70%   1         20        1          57m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 12%/70%   1         20        1          58m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 12%/70%   1         20        1          58m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 10%/70%   1         20        1          58m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 12%/70%   1         20        1          59m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 10%/70%   1         20        1          59m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 14%/70%   1         20        1          59m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 4%/70%    1         20        1          59m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 2%/70%    1         20        1          60m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 4%/70%    1         20        1          60m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 8%/70%    1         20        1          60m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 7%/70%    1         20        1          60m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 2%/70%    1         20        1          61m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 8%/70%    1         20        1          61m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 10%/70%   1         20        1          61m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 12%/70%   1         20        1          61m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 10%/70%   1         20        1          62m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 12%/70%   1         20        1          62m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 10%/70%   1         20        1          62m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 9%/70%    1         20        1          62m
+hivemq-broker-depl   Deployment/hivemq-broker-depl   cpu: 2%/70%    1         20        1          63m
+

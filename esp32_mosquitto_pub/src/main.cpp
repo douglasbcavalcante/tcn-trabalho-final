@@ -28,10 +28,11 @@ const char* ssid = "L&D2g";
 const char* password = "Do&Lu@1309";
 
 // Add your MQTT Broker IP address
-const char* mqtt_server = "192.168.15.2";
+// const char* mqtt_server = "192.168.15.2";
+const char* mqtt_server = "a9f98163b349643dfb468698cb2d3451-1371738073.us-east-1.elb.amazonaws.com";
 const char* PUB_TOPIC = "data_hora";
-const int mqtt_port = 31883;
-const int SEND_CYCLE_TIME_MS = 100;
+const int mqtt_port = 1883;
+const int SEND_CYCLE_TIME_MS = 1;
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -71,7 +72,7 @@ void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (client.connect("ESP32Client2")) {
+    if (client.connect("ESP32Client1")) {
       Serial.println("connected");
     } else {
       Serial.print("failed, rc=");
