@@ -8,7 +8,7 @@ import csv
 BROKER_HOST = "a9f98163b349643dfb468698cb2d3451-1371738073.us-east-1.elb.amazonaws.com"
 BROKER_PORT = 1883
 TOPIC = "data_hora"
-TEMPO_ENTRE_PUBLICACOES = 0.001 # Tempo em segundos.
+TEMPO_ENTRE_PUBLICACOES = 0.0001 # Tempo em segundos.
 
 # Nome do arquivo CSV onde os dados serão armazenados
 CSV_FILE = "pub.csv"
