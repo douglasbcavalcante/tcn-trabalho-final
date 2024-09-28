@@ -54,7 +54,7 @@ function esperanca = plot_and_save_histogram(fig_num, diff_time, media, desvpad,
     //disp([x(1:number_of_hist_classes)' hist' p' dist_p']);
     esperanca = sum(dist_p);
     disp(msprintf("Esperanca: %f s", esperanca));    
-    estat_dados = msprintf("Média = %.1f s \n Desv Pad = %.1f s \n Esperança = %.1f s", media, desvpad, esperanca);
+    estat_dados = msprintf("Média = %.1f ms \n Desv Pad = %.1f ms \n Esperança = %.1f ms", media, desvpad, esperanca);
     title(titulo);
     // Obtendo os limites dos eixos para calcular a posição
     xlim = gca().data_bounds(:, 1); // Limites do eixo x
