@@ -1,0 +1,34 @@
+pi@raspberrypi:~ $ sudo kubectl get hpa mosquitto-broker-depl --watch
+NAME                    REFERENCE                          TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 3%/70%   1         20        1          126m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 2%/70%   1         20        1          126m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 3%/70%   1         20        1          126m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 18%/70%   1         20        1          127m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 16%/70%   1         20        1          127m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 12%/70%   1         20        1          127m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 7%/70%    1         20        1          127m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 5%/70%    1         20        1          128m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 6%/70%    1         20        1          128m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 2%/70%    1         20        1          128m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 5%/70%    1         20        1          128m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 3%/70%    1         20        1          129m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 11%/70%   1         20        1          129m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 3%/70%    1         20        1          129m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 5%/70%    1         20        1          130m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 4%/70%    1         20        1          130m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 4%/70%    1         20        1          130m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 4%/70%    1         20        1          131m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 6%/70%    1         20        1          131m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 5%/70%    1         20        1          132m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 2%/70%    1         20        1          132m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 3%/70%    1         20        1          132m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 2%/70%    1         20        1          133m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 5%/70%    1         20        1          133m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 2%/70%    1         20        1          133m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 3%/70%    1         20        1          134m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 2%/70%    1         20        1          134m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 3%/70%    1         20        1          134m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 6%/70%    1         20        1          134m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 4%/70%    1         20        1          135m
+mosquitto-broker-depl   Deployment/mosquitto-broker-depl   cpu: 2%/70%    1         20        1          135m
+

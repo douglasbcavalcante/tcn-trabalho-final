@@ -31,7 +31,7 @@ const char* password = "Do&Lu@1309";
 const char* mqtt_server = "192.168.15.2";
 const char* PUB_TOPIC = "data_hora";
 const int mqtt_port = 31883;
-const int SEND_CYCLE_TIME_MS = 10;
+const int SEND_CYCLE_TIME_MS = 100;
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -39,7 +39,7 @@ long lastMsg = 0;
 char msg[50];
 int value = 0;
 struct tm *nowtm;
-char message[64], tmbuf[64];
+char message[80], tmbuf[80];
 
 // LED Pin
 const int ledPin = 2;
@@ -71,7 +71,7 @@ void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (client.connect("ESP32Client")) {
+    if (client.connect("ESP32Client2")) {
       Serial.println("connected");
     } else {
       Serial.print("failed, rc=");
@@ -94,15 +94,18 @@ void setup() {
 
 void loop() {
 
+
   if (!client.connected()) {
-    reconnect();
+     reconnect();
   }
   client.loop();
 
-  digitalWrite(ledPin, 1);
-
   long now = millis();
   if (now - lastMsg > SEND_CYCLE_TIME_MS) {
+
+
+    digitalWrite(ledPin, 1);
+
     lastMsg = now;
 
     struct timeval tv;
@@ -110,19 +113,21 @@ void loop() {
       Serial.println("Failed to obtain time");
       return;
     }
+  
+    IPAddress ip = WiFi.localIP();
+    snprintf(message, sizeof message, "%s", ip.toString().c_str());
 
     time_t epochTime = tv.tv_sec;
     nowtm = localtime(&epochTime);
-    strftime(message, sizeof message, "%Y-%m-%d %H:%M:%S", nowtm);
-    snprintf(message, sizeof message, "%s.%03d", message, tv.tv_usec / 1000);
+    strftime(tmbuf, sizeof tmbuf, "%Y-%m-%d %H:%M:%S", nowtm);
+    snprintf(message, sizeof message, "%s - %s.%03d", message, tmbuf, tv.tv_usec / 1000);
 
-    Serial.print("Data_Hora: ");
+    Serial.print("IP e data_Hora: ");
     Serial.println(message);
 
     client.publish(PUB_TOPIC, message);
 
+    digitalWrite(ledPin, 0);
   }
-  
-  digitalWrite(ledPin, 0);
 
 }

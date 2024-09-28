@@ -174,3 +174,5 @@ pub.csv
 build/
 sdkconfig
 sdkconfig.old
+
+raspberry_pi/resultados_esp32_rasp/videos/
