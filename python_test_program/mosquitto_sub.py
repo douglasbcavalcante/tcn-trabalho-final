@@ -4,7 +4,7 @@ import csv
 
 # Configurações do broker MQTT
 # BROKER_HOST = "192.168.15.2"
-BROKER_HOST = "a9f98163b349643dfb468698cb2d3451-1371738073.us-east-1.elb.amazonaws.com"
+BROKER_HOST = "a7eafdfc662004680aa6f774193acd33-2034123120.us-east-1.elb.amazonaws.com"
 BROKER_PORT = 1883
 TOPIC = "data_hora"
 # Nome do arquivo CSV onde os dados serão armazenados

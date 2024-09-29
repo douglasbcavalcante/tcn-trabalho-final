@@ -13,9 +13,15 @@ NUMBER_OF_HIST_CLASSES = 20;
 function [expec_number_of_data, number_of_data, diff]= verify_registers(send_time, dados_pub)
 
     number_of_data = size(send_time)(1);
+    first_sd = send_time(1);
+    last_sd = send_time(size(send_time)(1));
+    delta_sd = (last_sd - first_sd).duration/1000;
     expec_number_of_data = size(dados_pub)(1);
     diff = expec_number_of_data - number_of_data;
-         
+    
+    disp(msprintf("Primeiro registro %s;", string(first_sd)));
+    disp(msprintf("Último registro %s;", string(last_sd)));
+    disp(msprintf("Tempo de experimento %.f s;", delta_sd));         
     disp(msprintf("Número esperado de registros %.f;", expec_number_of_data));
     disp(msprintf("Quantidade de registros %.0f", number_of_data));
     disp(msprintf("Diferença %.0f", diff));

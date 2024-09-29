@@ -38,3 +38,7 @@
 - Arquivos para deployment do HiveMQ como broker MQTT, focado na implementação na nuvem AWS. 
 - Ferramentas recomendadas:
     - vscode
+
+# Vídeos sobre o projeto
+
+- Os vídeos explicativos e de testes do projeto podem ser encontrados na lista disponível no [YouTube](https://www.youtube.com/playlist?list=PLNcItX65p6WkYV4MTXmIoNxkXL7z6k-KD)
