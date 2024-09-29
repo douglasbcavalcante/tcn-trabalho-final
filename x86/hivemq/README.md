@@ -2,8 +2,8 @@
 
 ## Requisitos
 - Desktop Ubuntu 22.04
-- 8GB RAM
-- Virtual Box (Ubuntu 22.04 - 4GB RAM)
+- 8GB RAM (2 núcleos de processamento)
+- Virtual Box (Ubuntu 22.04 - 4GB RAM - 2 núcleos de processamento)
 
 ## Instalação do Kubernetes na versão K3S
 
@@ -11,13 +11,9 @@
 
 ### O que é o K3S:
 
-- O K3s é uma distribuição leve do Kubernetes, projetada especificamente para ambientes com recursos limitados, como dispositivos IoT e computação em edge. É otimizado para arquiteturas ARM, tornando-o ideal para o Raspberry Pi. O K3s oferece um processo de instalação simplificado, menores requisitos de recursos e integração sem problemas com hardware IoT.
+- O K3s é uma distribuição leve do Kubernetes, projetada especificamente para ambientes com recursos limitados, como dispositivos IoT e computação em edge. Também opera em ambientes Desktop, baremetal ou virtualizado.
 
-### Instalação para o Trabalho
-
-- A instalação para o trabalho não contemplou mais de um Raspberry, por não haver disponibilidade simultânea de mais de um equipamento.
-
-### Instalação do K3S no Raspian OS
+### Instalação do K3S
 
 Comando de instalação:
 
@@ -32,7 +28,7 @@ $ sudo systemctl status k3s
 $ sudo kubectl get nodes
 ```
 
-Se um nó for exibido, então a instalação ocorreu a contento.
+Se um nó for exibido, então a instalação ocorreu corretamente.
 
 ### Deploy do broker HiveMQ-CE.
 
@@ -73,7 +69,7 @@ $ sudo kubectl autoscale deployment hivemq-broker-depl --cpu-percent=50 --min=1 
 $ sudo kubectl get hpa hivemq-broker-depl --watch
 ```
 
-6. Teste manual (a partir de outro computador com Ubuntu instalado)
+6. Teste manual (a partir de outro computador com Ubuntu instalado). Pode-se utilizar o teste utilizado na implementação na Raspberry com [Python](../../python_test_program)
 
 - Instalar o __mosquitto-clients__:
 
