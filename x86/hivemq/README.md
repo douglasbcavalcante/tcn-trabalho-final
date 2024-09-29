@@ -69,7 +69,7 @@ $ sudo kubectl autoscale deployment hivemq-broker-depl --cpu-percent=50 --min=1 
 $ sudo kubectl get hpa hivemq-broker-depl --watch
 ```
 
-6. Teste manual (a partir de outro computador com Ubuntu instalado). Pode-se utilizar o teste utilizado na implementação na Raspberry com [Python](../../python_test_program)
+6. Teste manual (a partir de outro computador com Ubuntu instalado). Pode-se utilizar o teste com [Python](../../python_test_program) para sub e pub de MQTT.
 
 - Instalar o __mosquitto-clients__:
 
