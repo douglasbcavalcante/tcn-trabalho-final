@@ -28,7 +28,7 @@ function [expec_number_of_data, number_of_data, diff]= verify_registers(send_tim
 endfunction
 
 function plot_and_save_diff(fig_num, diff_time, filename)
-    fig = figure(fig_num);
+    fig =scf(fig_num); clf();// figure(fig_num);
     fig.figure_size = [1024, 768];
     plot(diff_time.duration / 1000);
     title(filename);
@@ -45,7 +45,7 @@ function esperanca = plot_and_save_histogram(fig_num, diff_time, media, desvpad,
     dx = (maior - menor)/NUMBER_OF_HIST_CLASSES;
     x = menor:dx:maior;
             
-    fig = figure(fig_num);
+    fig =scf(fig_num); clf();// figure(fig_num);
     fig.figure_size = [1024, 768];
     hist = histplot(x, diff_time.duration,normalization=%f)
             
@@ -65,7 +65,7 @@ function esperanca = plot_and_save_histogram(fig_num, diff_time, media, desvpad,
 endfunction
 
 function plot_and_save_sendXrec(fig_num, send_time, rec_time, filename)
-    fig = figure(fig_num);
+    fig = scf(fig_num); clf();//figure(fig_num);
     fig.figure_size = [1024, 768];
     plot(rec_time.time, send_time.time,'+b');
     title(filename);
