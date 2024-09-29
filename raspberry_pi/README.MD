@@ -4,4 +4,4 @@
 - Ver a pasta [**mosquitto**](./mosquitto).
 
 ## Programa em Python para testes
-- Ver a pasta [**python_test_program**](./python_test_program).
+- Ver a pasta [**python_test_program**](../python_test_program).
