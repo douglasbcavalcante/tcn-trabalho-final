@@ -6,7 +6,7 @@
 
 ## Conteúdo:
 
-### [Artigo](./MQTT___Kubernetes.pdf)
+### [Artigo em PDF](./MQTT___Kubernetes.pdf)
 
 ### [esp32_mosquitto_pub](./esp32_mosquitto_pub)
 
