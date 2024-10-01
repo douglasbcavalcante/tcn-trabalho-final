@@ -6,6 +6,8 @@
 
 ## Conteúdo:
 
+### [Artigo](./MQTT___Kubernetes.pdf)
+
 ### [esp32_mosquitto_pub](./esp32_mosquitto_pub)
 
 - Aplicação para ESP32 para publicação no cluster kubernetes
